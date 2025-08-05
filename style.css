@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.marcada {
+  text-decoration: underline;
+  background-color: #e0ffe0;
+}
+
+button {
+  padding: 4px 8px;
+  margin-top: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copiado {
+  color: green;
+  font-weight: bold;
+  margin-left: 4px;
+}
