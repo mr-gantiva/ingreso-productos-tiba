@@ -14,18 +14,13 @@ function cargarTabla(productos) {
     const marcada = localStorage.getItem(`ingresado-${sku}`) === "true";
 
     tr.innerHTML = `
-      ${crearCeldaConBoton(producto["SKU / Codigo"], "SKU", index)}
-      ${crearCeldaConBoton(
-        producto["Palabra Clave Principal"],
-        "PalabraClavePrincipal",
-        index
-      )}
-      ${crearCeldaConBoton(
-        producto["Palabras Clave Secundarias"],
-        "PalabrasClaveSecundarias",
-        index
-      )}
       ${crearCeldaConBoton(producto["Titulo del Producto (H1)"], "H1", index)}
+      ${crearCeldaConBoton(
+        producto["Descripcion Optimizada (Texto Plano)"],
+        "Descripcion",
+        index
+      )}
+      ${crearCeldaConBoton(producto["SKU / Codigo"], "SKU", index)}
       ${crearCeldaConBoton(
         producto["Titulo SEO (Rank Math)"],
         "TituloSEO",
@@ -37,8 +32,13 @@ function cargarTabla(productos) {
         index
       )}
       ${crearCeldaConBoton(
-        producto["Descripcion Optimizada (Texto Plano)"],
-        "Descripcion",
+        producto["Palabra Clave Principal"],
+        "PalabraClavePrincipal",
+        index
+      )}
+      ${crearCeldaConBoton(
+        producto["Palabras Clave Secundarias"],
+        "PalabrasClaveSecundarias",
         index
       )}
       ${crearCeldaConBoton(
